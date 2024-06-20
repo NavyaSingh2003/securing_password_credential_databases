@@ -217,3 +217,22 @@ Output success message to the user
 
 End Procedure 
 
+7) References
+   
+PAPER 1:
+Title:Analysis of password and salt combination scheme to improve hash
+algorithm security
+Published: International Journal of Advanced Computer Science and Applications, 2019
+
+Paper 2: 
+Title: Adversarial Password Cracking
+Published: Department of Electrical Engineering and Computer Science, MIT, Cambridge
+
+Paper 3:
+Title: Hardening Password Based Credential Databases
+Published: IEEE Transactions of Information Forensics and Security
+
+Paper 4 : 
+Title: Evaluation of Password Hashing Schemes in Open Source Web Platforms
+Published: Department of Digital Systems, University of Piraeus, Piraeus, Greece
+   
