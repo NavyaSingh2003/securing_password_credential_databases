@@ -44,19 +44,20 @@ Sign In:
 •	If the hashes match, it means you've entered the correct password, and you're allowed to sign in. 
  
  
-1.Brute Force Attack : A brute force attack attempts to guess a password by systematically trying every possible combination of characters. This method is exhaustive, iterating through all combinations of letters, numbers, symbols, and uppercase/lowercase variations until the correct password is discovered. 
+a) Brute Force Attack : A brute force attack attempts to guess a password by systematically trying every possible combination of characters. This method is exhaustive, iterating through all combinations of letters, numbers, symbols, and uppercase/lowercase variations until the correct password is discovered. 
 Strengths: Brute force attacks are guaranteed to find the password eventually, regardless of its complexity. 
 Weaknesses: This method is extremely slow, especially for passwords with many characters or complex variations. It becomes computationally infeasible for very long passwords.
 
-2.Dictionary Attack : A dictionary attack leverages a list of commonly used passwords or phrases. This list might include words found in dictionaries, common names, keyboard patterns, and leaked password databases. The attack attempts each password in the list against the target system. 
+b) Dictionary Attack : A dictionary attack leverages a list of commonly used passwords or phrases. This list might include words found in dictionaries, common names, keyboard patterns, and leaked password databases. The attack attempts each password in the list against the target system. 
 Strengths: Dictionary attacks are significantly faster than brute force attacks, especially when targeting users who choose weak passwords. 
 Weaknesses: This method only succeeds if the password is present in the dictionary. Strong passwords with unique characters and variations are unlikely to be cracked through this method.
 
-3.Rainbow Table Attack : Rainbow table attacks utilize pre-computed tables that map possible plaintexts (passwords) to their corresponding hashed values. These tables are created offline using complex algorithms and require significant storage space. During an attack, the attacker compares the hashed password obtained from the target system to the pre-computed hashes in the rainbow table. 
+c) Rainbow Table Attack : Rainbow table attacks utilize pre-computed tables that map possible plaintexts (passwords) to their corresponding hashed values. These tables are created offline using complex algorithms and require significant storage space. During an attack, the attacker compares the hashed password obtained from the target system to the pre-computed hashes in the rainbow table. 
 Strengths: Rainbow table attacks can be very fast for cracking passwords of specific lengths, as they eliminate the need for real-time calculations. 
 Weaknesses: These attacks are limited by the pre-computed table's size and scope. They only work for password lengths the table covers, and creating tables for complex passwords is resource-intensive. 
 
-2) Problem Statement 
+2) Problem Statement
+   
 Traditional dictionary attacks rely on predefined wordlists, which often lack the diversity and complexity required to effectively crack passwords in modern security scenarios. The objective of this project is to enhance the effectiveness of dictionary attacks by creating a robust and comprehensive wordlist through the integration of various techniques such as Custom Word List Generator using scrapping, Spidering, Common User Passwords Profiling, Mangling rules, and other relevant methodologies. 
 
 3) Significance Of the Problem   
