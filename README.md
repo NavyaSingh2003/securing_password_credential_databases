@@ -10,6 +10,7 @@ Imagine our online life: emails, bank accounts, social media, and more. All prot
 •	Data breaches and reputational damage: Companies with compromised databases face hefty fines and lose public trust.
 
 We need a better way to secure passwords, protecting both users and their data. 
+
 Introduction to Hash Algorithms: 
 Hashing is described as an algorithm that transforms strings into random characters, operating as a one-way function without a key for decryption. Hashing is commonly used for security in the authentication process, ensuring the validity of information transmission. 
 Hash Usage in Information Systems: 
@@ -76,7 +77,7 @@ GAN Training: Train a Generative Adversarial Network (GAN) using the enriched pa
 
 Evaluation and Refinement: Evaluate the quality and effectiveness of the generated password lists using metrics such as password strength, entropy, and coverage. Refine the pipeline based on the evaluation results, adjusting parameters, adding additional data sources, or improving the training process to enhance performance practices across organizations. 
 
-5)  Modeling and Implementation Details
+5) Modeling and Implementation Details
 ![image](https://github.com/NavyaSingh2003/securing_password_credential_databases/assets/110404553/b1888fe6-0522-4753-8392-45738819b977)
 
 ![image](https://github.com/NavyaSingh2003/securing_password_credential_databases/assets/110404553/923f2e50-05c5-4ea5-8cb6-d63ce33c9403)
@@ -87,14 +88,16 @@ GOAL 1: Comparing password cracking time when hashes are manipulated by using th
  
 RESULTS: 
 Scheme 1 took least time which shows that it is not that much safe. 
-
 Scheme 2 took more time than scheme 1. 
-
 Scheme 3 took more time than scheme 1 and similar to scheme 2. 
 
-Scheme 1 : ![image](https://github.com/NavyaSingh2003/securing_password_credential_databases/assets/110404553/a350f02a-c228-44de-bc54-2481b0f9f9e1)
-Scheme 2 : ![image](https://github.com/NavyaSingh2003/securing_password_credential_databases/assets/110404553/8e9c0406-851c-49a3-88dd-ed6a40e9cf82)
-Scheme 3 : ![image](https://github.com/NavyaSingh2003/securing_password_credential_databases/assets/110404553/efbb0c9a-fa25-405b-ab2d-a2a9b6c69357)
+Scheme 1 
+![image](https://github.com/NavyaSingh2003/securing_password_credential_databases/assets/110404553/a350f02a-c228-44de-bc54-2481b0f9f9e1)
+Scheme 2 
+![image](https://github.com/NavyaSingh2003/securing_password_credential_databases/assets/110404553/8e9c0406-851c-49a3-88dd-ed6a40e9cf82)
+Scheme 3
+![image](https://github.com/NavyaSingh2003/securing_password_credential_databases/assets/110404553/efbb0c9a-fa25-405b-ab2d-a2a9b6c69357)
+Comparison between all 3 schemes
 ![image](https://github.com/NavyaSingh2003/securing_password_credential_databases/assets/110404553/447fbca1-2250-4221-a818-dd37badc006a)
 
 GOAL 2: Comparing all three attacks in terms of their speed and working characteristics 
@@ -133,72 +136,42 @@ GOAL 8: Wordlist generation based on spidering by using crawling technique for s
 GOAL 9: Pseudo code of Password Profiling   
 
 Procedure PASSWORD PROFILING(): 
-
 Initialize wordlist as an empty list 
-
 Prompt user for personal information (e.g., name, birthdate, pet name, etc.) 
-
 Prompt user for password policy requirements (e.g., minimum length, required characters, etc.) 
-
 Generate password variations based on user-provided information and policy requirements: 
-
 For each category of information: 
-
 For each possible combination of that category: 
-
 Append variations of that combination to the wordlist 
-
 Save the generated wordlist to a file 
-
 Output success message to the user 
-
 End Procedure 
 
 GOAL 10: Pseudo code of Custom Word List Generator using scrapping 
  
 Procedure custom word list generator using scrapping(url, depth, min_length): 
- 
 Initialize wordlist as an empty list 
-
 Initialize visited_urls as an empty set 
-
 Add url to visited_urls 
-
 Crawl the website starting from url up to depth levels: 
-
 For each page in the website: 
-
 Extract text content from the page 
-
 Tokenize the text into words 
-
 Filter out words shorter than min_length 
-
 Add unique words to the wordlist 
-
 Save the generated wordlist to a file 
-
 Output success message to the user 
-
 End Procedure 
 
 GOAL 11: Pseudo code of Crunch 
  
 Procedure Crunch(min_length, max_length, character_set, output_file): 
- 
 Initialize wordlist as an empty list 
-
 Generate all possible combinations of characters within the specified character set: 
-
 For each length from min_length to max_length: 
-
 For each combination of characters of that length: 
-
 Add the combination to the wordlist 
-
 Write the generated wordlist to the output_file 
-
 Output success message to the user 
-
 End Procedure 
 
