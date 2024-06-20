@@ -7,6 +7,7 @@ The Password Problem: Easy Targets, Big Risks
 Imagine our online life: emails, bank accounts, social media, and more. All protected by passwords, acting as the keys to your digital world. But what if those keys were easily copied, stolen, or cracked? Unfortunately, traditional password storage methods like plain text and simple hashing leave user data vulnerable to attackers. Simple hashing scrambles passwords, but attackers can use pre-computed lists called rainbow tables to crack them quickly. This puts sensitive data at risk, leading to: 
  
 •	Identity theft and financial loss: Stolen credentials can be used to access and exploit your accounts 
+
 •	Data breaches and reputational damage: Companies with compromised databases face hefty fines and lose public trust.
 
 We need a better way to secure passwords, protecting both users and their data. 
@@ -21,6 +22,7 @@ During password registration, a unique, random string of characters (salt) is ge
 How ‘Sign in’ and ‘Sign up’ works for hashed passwords with salts ?? 
 
 Sign Up: 
+
 •	We enter our desired username and password.(eg:Secret123) 
 
 •	The server generates a random salt, let's say "abc", and combines it with our password, resulting in "abcSecret123". 
@@ -30,6 +32,7 @@ Sign Up:
 •	The website or app stores our username, salt and the hash of our password in its database. It doesn't store our actual password, just the hash. 
 
 Sign In: 
+
 •	When you try to sign in, you enter your username and password. 
 
 •	The server retrieves your stored salt "abc" from the database and combines it with the password you entered, resulting in "abcSecret123". 
@@ -98,20 +101,21 @@ Scheme 1 took least time which shows that it is not that much safe.
 Scheme 2 took more time than scheme 1. 
 Scheme 3 took more time than scheme 1 and similar to scheme 2. 
 
-Scheme 1 
 ![image](https://github.com/NavyaSingh2003/securing_password_credential_databases/assets/110404553/a350f02a-c228-44de-bc54-2481b0f9f9e1)
-Scheme 2 
+
 ![image](https://github.com/NavyaSingh2003/securing_password_credential_databases/assets/110404553/8e9c0406-851c-49a3-88dd-ed6a40e9cf82)
-Scheme 3
+
 ![image](https://github.com/NavyaSingh2003/securing_password_credential_databases/assets/110404553/efbb0c9a-fa25-405b-ab2d-a2a9b6c69357)
-Comparison between all 3 schemes
+
 ![image](https://github.com/NavyaSingh2003/securing_password_credential_databases/assets/110404553/447fbca1-2250-4221-a818-dd37badc006a)
 
 GOAL 2: Comparing all three attacks in terms of their speed and working characteristics 
  
 RESULTS: 
 Brute Force : It was quite slow while cracking any password as it will generate all possible combinations. 
+
 Dictionary : It was faster than brute force attack. 
+
 Rainbow Table: It was faster than brute force and especially for specific lengths. 
  
 ![image](https://github.com/NavyaSingh2003/securing_password_credential_databases/assets/110404553/6d4086dc-2a5d-4857-b510-60a9177687e0)
