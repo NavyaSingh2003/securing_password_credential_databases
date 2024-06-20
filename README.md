@@ -148,42 +148,72 @@ GOAL 8: Wordlist generation based on spidering by using crawling technique for s
 GOAL 9: Pseudo code of Password Profiling   
 
 Procedure PASSWORD PROFILING(): 
+
 Initialize wordlist as an empty list 
+
 Prompt user for personal information (e.g., name, birthdate, pet name, etc.) 
+
 Prompt user for password policy requirements (e.g., minimum length, required characters, etc.) 
+
 Generate password variations based on user-provided information and policy requirements: 
+
 For each category of information: 
+
 For each possible combination of that category: 
+
 Append variations of that combination to the wordlist 
+
 Save the generated wordlist to a file 
+
 Output success message to the user 
+
 End Procedure 
 
 GOAL 10: Pseudo code of Custom Word List Generator using scrapping 
  
 Procedure custom word list generator using scrapping(url, depth, min_length): 
-Initialize wordlist as an empty list 
+
+Initialize wordlist as an empty list
+
 Initialize visited_urls as an empty set 
+
 Add url to visited_urls 
+
 Crawl the website starting from url up to depth levels: 
+
 For each page in the website: 
+
 Extract text content from the page 
+
 Tokenize the text into words 
+
 Filter out words shorter than min_length 
+
 Add unique words to the wordlist 
+
 Save the generated wordlist to a file 
+
 Output success message to the user 
+
 End Procedure 
 
 GOAL 11: Pseudo code of Crunch 
  
 Procedure Crunch(min_length, max_length, character_set, output_file): 
+
 Initialize wordlist as an empty list 
+
 Generate all possible combinations of characters within the specified character set: 
+
 For each length from min_length to max_length: 
+
 For each combination of characters of that length: 
+
 Add the combination to the wordlist 
+
 Write the generated wordlist to the output_file 
+
 Output success message to the user 
+
 End Procedure 
 
